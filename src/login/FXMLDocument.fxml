@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="232.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+    <children>
+      <Pane layoutX="39.0" prefHeight="232.0" prefWidth="369.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="user" focusColor="#09b6bc" layoutX="103.0" layoutY="54.0" maxWidth="171.0" minWidth="164.0" prefHeight="31.0" prefWidth="171.0" promptText="Username" />
+            <JFXPasswordField fx:id="pass" focusColor="#09b6bc" layoutX="103.0" layoutY="95.0" maxWidth="171.0" minWidth="158.0" prefHeight="31.0" prefWidth="171.0" promptText="Password" />
+            <JFXButton fx:id="signin" layoutX="110.0" layoutY="148.0" onAction="#makeSignin" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: #2196F3;" text="Sign in" textFill="WHITE">
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="signup" layoutX="209.0" layoutY="148.0" onAction="#makeSignup" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: #2196F3;" text="Sign up" textFill="WHITE">
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.EmployeeFormxController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="name" focusColor="#09b6bc" layoutX="226.0" layoutY="68.0" promptText="name" />
+            <JFXTextField fx:id="salary" focusColor="#09b6bc" layoutX="417.0" layoutY="68.0" promptText="salary" />
+            <JFXTextField fx:id="id" focusColor="#09b6bc" layoutX="54.0" layoutY="68.0" promptText="id" />
+            <JFXTextField fx:id="password" focusColor="#09b6bc" layoutX="54.0" layoutY="130.0" promptText="password" />
+            <JFXButton fx:id="editBtn" layoutX="398.0" layoutY="142.0" onAction="#updateEmployee" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #2196F3;" text="Edit" textFill="WHITE" />
+            <JFXButton fx:id="saveBtn" layoutX="308.0" layoutY="142.0" onAction="#saveEmployee" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #2196F3;" text="Save" textFill="WHITE" />
+            <JFXButton fx:id="deleteBtn" layoutX="488.0" layoutY="142.0" onAction="#deleteEmployee" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #2196F3;" text="Delete" textFill="WHITE" />
+            <TableView fx:id="table" layoutX="53.0" layoutY="216.0" onMouseClicked="#setOnField" prefHeight="151.0" prefWidth="501.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy></TableView>
+            <JFXTextField fx:id="filterInput" focusColor="#09b6bc" layoutX="47.0" layoutY="180.0" promptText="Search" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
